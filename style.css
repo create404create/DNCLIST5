@@ -1,0 +1,107 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 20px;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 28px;
+}
+
+h1 {
+  text-align: center;
+  color: #0f62fe;
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  background: #f8fafc;
+}
+
+button {
+  background: #0f62fe;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 10px 4px;
+}
+
+button:hover:not(:disabled) {
+  background: #004fdc;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #a5c7ff;
+  cursor: not-allowed;
+}
+
+#status, #progress {
+  text-align: center;
+  font-size: 1.15em;
+  font-weight: 500;
+  margin: 20px 0;
+  min-height: 28px;
+}
+
+.result-box {
+  margin: 24px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  max-height: 380px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+}
+
+.dnc    { color: #dc2626; font-weight: bold; }
+.clean  { color: #16a34a; font-weight: bold; }
+.error  { color: #b91c1c; }
+.small  { font-size: 0.92em; color: #64748b; }
+
+.controls {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.download-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+select {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  min-width: 220px;
+  background: white;
+}
