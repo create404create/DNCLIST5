@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DNC Checker - Large File Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>DNC Number Checker (Large Files)</h1>
+  <p class="subtitle">Supports very large number lists – processes line by line (streaming)</p>
+
+  <input type="file" id="fileInput" accept=".txt,.csv" />
+  <button id="startBtn" disabled>Start Processing</button>
+
+  <div id="status">Waiting for file upload...</div>
+  <div id="progress">Processed: 0 | DNC: 0 | Clean: 0</div>
+
+  <div class="result-box" id="results"></div>
+
+  <div class="controls">
+    <select id="stateSelect">
+      <option value="">All States</option>
+    </select>
+  </div>
+
+  <div class="download-area">
+    <button id="dlDNC" disabled>Download All DNC</button>
+    <button id="dlClean" disabled>Download All Clean</button>
+    <button id="dlStateDNC" disabled>DNC (Selected State)</button>
+    <button id="dlStateClean" disabled>Clean (Selected State)</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
